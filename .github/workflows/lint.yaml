@@ -8,8 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: nf-core/setup-nextflow@v1.2.0
-
-      - run: nextflow -version
-
-      - run: nf-core lint
+      - uses: maxibor/nf-core-gh-action@master
+        with:
+          nextflow_version: '20.04.1'
+          nfcore_version: '1.9'
